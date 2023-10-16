@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>About Us</title>
+        <style>
+body {
+    background-color: rgb(18, 110, 113);
+}
+
+table {
+    background-color: aqua;
+    border-color: rgb(11, 73, 75);
+}
+
+#t {
+    color: white;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: aqua;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+        </style>
+    </head>
+    <body>
+        <table border = "10" width = "100%" align = "center">
+            <tr>
+                <td>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="http://127.0.0.1:5000"><h4>D12's Shoe Store</h4></a>
+                        <a href="http://127.0.0.1:5000/about/">About</a>
+                        <a href="http://127.0.0.1:5000/services/">Services</a>
+                        <a href="http://127.0.0.1:5000/contact/">Contact</a>
+                      </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; OPEN</span>
+
+                    <script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+                </script>
+            </td>
+            <td width = "60%" align = "center">
+                <a href = "http://127.0.0.1:5000"><h2>D12's Shoe Store</h2></a>
+            </td>
+            <td align = "center">
+                <a href = "http://127.0.0.1:5000/br/"><p style="font-size:30px; cursor:pointer">&rarr; BROWSE</p></a>
+            </td>
+            </tr>
+        </table>
+        <h3 id = "t">&nbsp;About Us</h3>
+        <br>
+        <table border = "10" width = "100%" align = "center">
+            <tr>
+                <td>
+                    <p><br>
+                        Welcome to <b>D12's Shoe Store</b>, your go-to destination for stylish and comfortable footwear.<br>
+We are passionate about shoes and committed to providing our customers with the best selection of high-quality footwear for every occasion.<br>
+Here's why you should consider us for all your shoe shopping needs:<br>
+<br>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p id = "t"><br><br><b>Quality and Style: </b>At D12's Shoe Store, we believe that great shoes should not only look good but also feel good.
+            <br>That's why we handpick each pair to ensure they meet our standards of quality and style.<br>
+            <br><br><b>Wide Variety:</b> Our extensive collection includes shoes for men, women, and children,
+            <br>covering everything from sneakers and sandals to formal dress shoes and boots.
+            <br>No matter your age or style preferences, you'll find the perfect pair here.<br>
+            <br><br><b>Exceptional Service:</b> We take pride in offering exceptional customer service.
+            <br>Our friendly and knowledgeable staff is always ready to assist you in finding the right fit and style.
+            <br>We understand that shoe shopping can be a personal experience, and we're here to make it enjoyable for you.<br>
+            <br><br><b>Affordability:</b> We believe that everyone deserves access to great footwear without breaking the bank.
+            <br>That's why we offer a range of price points to accommodate different budgets, without compromising on quality.<br>
+            <br><br><b>Convenience:</b> Shopping at [Your Shoe Store Name] is convenient and hassle-free.
+            <br>You can explore our entire collection from the comfort of your home through our online store or visit our physical location
+            <br>to try on your favorite styles.<br>
+            <br>
+        </p>
+        <br>
+        <br>
+        <table border = "10" width = "100%" align = "center">
+            <tr>
+                <td>
+                    <p><br>
+                        We look forward to serving you and helping you find the perfect footwear to step out in style and comfort.
+                        <br>Thank you for considering <b>D12's Shoe Store</b> as your preferred shoe destination.<br><br>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+    </body>
+</html>

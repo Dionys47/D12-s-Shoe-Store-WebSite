@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>D12's Store</title>
+        <style>
+body {
+    background-color: rgb(18, 110, 113);
+}
+
+table {
+    background-color: aqua;
+    border-color: rgb(11, 73, 75);
+}
+
+#t {
+    color: white;
+}
+
+p.s{
+    font-size: large;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: aqua;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.25s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+        </style>
+    </head>
+    <body>
+        <br>
+        <table border = "10" align = "center" width = "100%">
+            <tr>
+                <td align = "center">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="http://127.0.0.1:5000"><h4>D12's Shoe Store</h4></a>
+                        <a href="http://127.0.0.1:5000/about/">About</a>
+                        <a href="http://127.0.0.1:5000/services/">Services</a>
+                        <a href="http://127.0.0.1:5000/contact/">Contact</a>
+                      </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; OPEN</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+                </td>
+                <td width = "70%" align = "center">
+                    <a href = "http://127.0.0.1:5000"><h2>D12's Shoe Store</h2></a>
+                </td>
+                <td align = "center">
+                    <a href = "http://127.0.0.1:5000/br/"><p style="font-size:30px; cursor:pointer">&rarr; BROWSE</p></a>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table border = "10" align = "center" width = "100%">
+            <tr>
+                <td colspan = "3">
+                    <img class = "i" src = "{{ url_for('static', filename='image/hm.png')}}" width = "100%">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h3 id = "t" align = "center">Most trending</h3>
+        
+        <table border = "10">
+            <tr align = "center">
+                <td width = "33%">
+                    <p align = "left">Nike Air Force 1 '07
+                        <br>USD: 74.99</p>
+                    <a href = "http://127.0.0.1:5000/pr_1/"><img src = "{{ url_for('static', filename='image/1.webp')}}" width = "33%"></a>
+                </td>
+                <td width = "33%">
+                    <p align = "left">Nike Air Max AP
+                        <br>USD: 82.95</p>
+                    <a href = "http://127.0.0.1:5000/pr_2/"><img src = "{{ url_for('static', filename='image/2.webp')}}" width = "33%"></a>
+                </td>
+                <td width = "33%">
+                    <p align = "left">Nike Court Legacy
+                        <br>USD: 56.95</p>
+                    <a href = "http://127.0.0.1:5000/pr_3/"><img src = "{{ url_for('static', filename='image/3.webp')}}" width = "33%"></a>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h4 id = "t">About us</h4>
+        <p id = "t">Information (2023)</p>
+        <br>
+        <table border = "10" align = "center" width = "100%">
+            <tr align = "center">
+                <td><br>
+                    <a href="http://127.0.0.1:5000/about/"><p class = "s">About</p></a><br>
+                </td>
+                <td><br>
+                    <a href="http://127.0.0.1:5000/services/"><p class = "s">Services</p></a><br>
+                </td>
+                <td><br>
+                    <a href="http://127.0.0.1:5000/contact/"><p class = "s">Contact</p></a><br>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+    </body>
+</html>

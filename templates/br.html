@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>Nike Air Shoes 1 '07</title>
+        <style>
+body {
+    background-color: rgb(18, 110, 113);
+}
+
+table {
+    background-color: aqua;
+    border-color: rgb(11, 73, 75);
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: aqua;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+        </style>
+    </head>
+    <body>
+        <table border = "10" width = "100%" align = "center">
+            <tr>
+                <td>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="http://127.0.0.1:5000"><h4>D12's Shoe Store</h4></a>
+                        <a href="http://127.0.0.1:5000/about/">About</a>
+                        <a href="http://127.0.0.1:5000/services/">Services</a>
+                        <a href="http://127.0.0.1:5000/contact/">Contact</a>
+                      </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; OPEN</span>
+
+                    <script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+                </script>
+            </td>
+            <td width = "60%" align = "center">
+                <a href = "http://127.0.0.1:5000"><h2>D12's Shoe Store</h2></a>
+            </td>
+            <td align = "center">
+                <a href = "http://127.0.0.1:5000/br/"><p style="font-size:30px; cursor:pointer">&rarr; BROWSE</p></a>
+            </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table border = "10" width = "100%" height = "80%" align = "center">
+            <tr align = "center">
+                <td><p align = "left">Nike LeBron NXXT Gen
+                    <br>USD: 165</p>
+                <a href = "http://127.0.0.1:5000/pr_4/"><img src = "{{ url_for('static', filename='image/leb.jfif')}}" width = "33%"></a></td>
+                <td><p align = "left">Nike Vomero 5
+                    <br>USD: 158.5</p>
+                <a href = "http://127.0.0.1:5000/pr_5/"><img src = "{{ url_for('static', filename='image/vo.webp')}}" width = "33%"></a></td>
+                <td><p align = "left">Nike Air Max AP
+                    <br>USD: 82.95</p>
+                    <a href = "http://127.0.0.1:5000/pr_2/"><img src = "{{ url_for('static', filename='image/2.webp')}}" width = "33%"></a></td>
+                <td><p align = "left">Nike KD16
+                    <br>USD: 155</p>
+                <a href = "http://127.0.0.1:5000/pr_6/"><img src = "{{ url_for('static', filename='image/kd16.webp')}}" width = "33%"></a></td>
+            </tr>
+            <tr align = "center">
+                <td><p align = "left">Nike Air Jordan Legacy 312 (Low)
+                    <br>USD: 139.5</p>
+                <a href = "http://127.0.0.1:5000/pr_7/"><img src = "{{ url_for('static', filename='image/jor.webp')}}" width = "33%"></a></td>
+                <td><p align = "left">Adidas Samba
+                    <br>USD: 145.9</p>
+                <a href = "http://127.0.0.1:5000/pr_10/"><img src = "{{ url_for('static', filename='image/samba.avif')}}" width = "33%"></a></td>
+                <td><p align = "left">Nike Air Force 1 '07
+                    <br>USD: 74.99</p>
+                    <a href = "http://127.0.0.1:5000/pr_1/"><img src = "{{ url_for('static', filename='image/1.webp')}}" width = "33%"></a></td>
+                <td><p align = "left">Nike ACG Air Zoom
+                    <br>USD: 235.9</p>
+                <a href = "http://127.0.0.1:5000/pr_8/"><img src = "{{ url_for('static', filename='image/acg.webp')}}" width = "33%"></a></td>
+            </tr>
+            <tr align = "center">
+                <td><p align = "left">Adidas Superstar XLG
+                    <br>USD: 105.9</p>
+                <a href = "http://127.0.0.1:5000/pr_9/"><img src = "{{ url_for('static', filename='image/xlg.avif')}}" width = "33%"></a></td>
+                <td><p align = "left">Nike Court Legacy
+                    <br>USD: 56.95</p>
+                <a href = "http://127.0.0.1:5000/pr_3/"><img src = "{{ url_for('static', filename='image/3.webp')}}" width = "33%"></a></td>
+                <td><p align = "left">Adidas Racer TR23
+                    <br>USD: 79.5</p>
+                <a href = "http://127.0.0.1:5000/pr_11/"><img src = "{{ url_for('static', filename='image/tr23.avif')}}" width = "33%"></a></td>
+                <td><p align = "left">Adidas NMD
+                    <br>USD: 149.5</p>
+                <a href = "http://127.0.0.1:5000/pr_12/"><img src = "{{ url_for('static', filename='image/nmd.avif')}}" width = "33%"></a></td>
+            </tr>
+        </table>
+    </body>
+</html>

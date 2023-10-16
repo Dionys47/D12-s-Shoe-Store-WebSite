@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <style>
+body {
+    background-color: rgb(18, 110, 113);
+}
+
+table {
+    background-color: aqua;
+    border-color: rgb(11, 73, 75);
+}
+
+#t {
+    color: white;
+}
+
+p.s {
+    font-size: large;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: aqua;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+        </style>
+    </head>
+    <body>
+        <table border = "10" width = "100%" align = "center">
+            <tr>
+                <td>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="http://127.0.0.1:5000"><h4>D12's Shoe Store</h4></a>
+                        <a href="http://127.0.0.1:5000/about/">About</a>
+                        <a href="http://127.0.0.1:5000/services/">Services</a>
+                        <a href="http://127.0.0.1:5000/contact/">Contact</a>
+                      </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; OPEN</span>
+
+                    <script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+                </script>
+            </td>
+            <td width = "60%" align = "center">
+                <a href = "http://127.0.0.1:5000"><h2>D12's Shoe Store</h2></a>
+            </td>
+            <td align = "center">
+                <a href = "http://127.0.0.1:5000/br/"><p style="font-size:30px; cursor:pointer">&rarr; BROWSE</p></a>
+            </td>
+            </tr>
+        </table>
+        <br>
+        <h3 id = "t">&nbsp;Contact</h3>
+        <br>
+        <table border = "10" width = "100%" align = "center">
+            <tr>
+                <td>
+                    <p><br>
+                        If you have any questions, feedback, or need assistance,
+                        <br>please don't hesitate to get in touch with us.
+                        <br>You can reach us through the following channels:
+                    </p>
+                    <br>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <p id = "t" class = "s">
+            <b>&#128222;&nbsp;Phone:</b> +355 69 12 47 101<br><br>
+            <b>&#128233;&nbsp;Email:</b> d12s.ss@gmail.com<br><br>
+            <b>&#127978;&nbsp;Physical Address:</b> St "30 Vjetori", Berat, Albania.<br>
+            <br>
+            <br>
+        </p>
+        <table border = "10" width = "100%" align = "center">
+            <tr>
+                <td>
+                    <p><br>
+                        We look forward to serving you and helping you find the perfect footwear to step out in style and comfort.
+                        <br>Thank you for considering <b>D12's Shoe Store</b> as your preferred shoe destination.<br><br>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
